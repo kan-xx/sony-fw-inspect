@@ -1,0 +1,43 @@
+MIT License
+
+Copyright (c) 2026 kan-xx contributors
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+---
+
+Trademark, Copyright & Hardware Safety Notice / 商标、版权与硬件安全声明
+
+1. "Sony", "Alpha", "ILCE-7RM3", and related product names are trademarks or
+   registered trademarks of Sony Group Corporation. This project is an
+   independent firmware forensics, unpacking, ABI verification, and offline
+   emulation toolkit and is neither affiliated with, endorsed by, nor sponsored
+   by Sony Group Corporation.
+2. Zero proprietary Sony firmware binaries (`*.so`, `*.elf`, `*.ko`, `*.bin`),
+   Linux kernel images (`vmlinuz*`, `initramfs*`), or media assets are included
+   in or distributed with this repository. All runtime analysis harnesses
+   reference user-extracted firmware paths externally via `A7R3_FW_ROOT`.
+3. All acquisition and unpacking utilities operate strictly read-only on host
+   images or stage bounded windows inside volatile camera RAM (`/tmp_bt` tmpfs).
+   Use solely on hardware and legally obtained firmware backups you own.
+
+---
+
+Mandatory Educational & Non-Commercial Notice / 学习研究与非商业使用补充声明:
+Please read DISCLAIMER.md before using this repository. All contents are provided strictly for personal learning and academic research on personally owned hardware, and commercial use is prohibited as detailed in DISCLAIMER.md.

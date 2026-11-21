@@ -1,0 +1,53 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sony-fw-inspect"
+version = "0.1.0"
+description = "Offline firmware acquisition, partition/WBI1/CramFS unpacking, Sony ARMv7 ld-2.11.2.so DT_RELCOUNT=0 ABI builder, and stub-free Unicorn execution toolkit"
+readme = "README.md"
+license = { file = "LICENSE" }
+requires-python = ">=3.10"
+authors = [
+    { name = "kan-xx contributors" }
+]
+keywords = ["sony", "firmware", "unpacker", "elf", "unicorn", "armv7", "mips", "cramfs", "ext2"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: MacOS",
+    "Operating System :: POSIX :: Linux",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+]
+dependencies = []
+
+[project.optional-dependencies]
+analysis = [
+    "pyelftools>=0.30",
+    "unicorn>=2.0.1",
+    "capstone>=5.0.0",
+    "pyfatfs>=1.1.0",
+]
+dev = [
+    "pytest>=7.0",
+]
+
+[project.scripts]
+sony-fw-inspect = "sony_fw_inspect.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
+
+[project.urls]
+Homepage = "https://github.com/kan-xx/sony-fw-inspect"
+Repository = "https://github.com/kan-xx/sony-fw-inspect"

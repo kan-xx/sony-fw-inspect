@@ -1,0 +1,34 @@
+# Python bytecode & packaging
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+build/
+dist/
+.pytest_cache/
+.coverage
+.venv/
+venv/
+
+# OS & Ghidra scratch files
+.DS_Store
+ghidra-scripts/*.class
+
+# Strictly exclude firmware blobs, VM kernels, object files, and media files
+*.o
+*.so
+*.elf
+*.ko
+*.bin
+*.cpio
+*.cpio.gz
+vmlinuz*
+initramfs*
+*.ARW
+*.MP4
+*.JPG
+*.wav
+arm-loader-vm/work/
+arm-loader-vm/*.log
+arm-loader-vm/*.stderr
