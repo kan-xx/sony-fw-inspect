@@ -10,7 +10,7 @@ readme = "README.md"
 license = { file = "LICENSE" }
 requires-python = ">=3.10"
 authors = [
-    { name = "kan-xx contributors" }
+    { name = "sony-a7r3-research contributors" }
 ]
 keywords = ["sony", "firmware", "unpacker", "elf", "unicorn", "armv7", "mips", "cramfs", "ext2"]
 classifiers = [
@@ -49,5 +49,5 @@ pythonpath = ["src"]
 testpaths = ["tests"]
 
 [project.urls]
-Homepage = "https://github.com/kan-xx/sony-fw-inspect"
-Repository = "https://github.com/kan-xx/sony-fw-inspect"
+Homepage = "https://github.com/sony-a7r3-research/sony-fw-inspect"
+Repository = "https://github.com/sony-a7r3-research/sony-fw-inspect"
